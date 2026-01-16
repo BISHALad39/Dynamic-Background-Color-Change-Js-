@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Background Color Change Site</title>
+    <style>
+        body{
+            margin: 0;
+            height: 950px;
+            display: flex;
+            justify-content: center;  
+            align-items: center;   
+        }
+          /* h1 {
+            align-items: center;
+            color: rgb(42, 30, 30);
+            font-weight: bold;
+        } */
+
+    </style>
+</head>
+<body>
+
+    <h1>Dynamic Background Color Change</h1>
+
+
+<script>
+  const colors = ["red", "blue", "green", "yellow", "pink", "purple", "orange"];
+
+  setInterval(() => {
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    document.body.style.backgroundColor = colors[randomIndex];
+  }, 500);
+</script>
+
+    
+
+</body>
+</html>
